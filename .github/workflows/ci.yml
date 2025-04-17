@@ -1,1 +1,6 @@
-# GitHub Actions CI/CD workflow
+on:
+    push:
+        branches:
+            - main
+            
+        # GitHub Actions CI/CD workflow
