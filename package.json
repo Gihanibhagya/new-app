@@ -1,6 +1,4 @@
-"scripts": {
-  "test": "echo \"No tests yet\" && exit 0"
-}
+
 "scripts": {
   "test": "jest"
 }
