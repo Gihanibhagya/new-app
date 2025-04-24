@@ -41,3 +41,8 @@ jobs:
         run: npm install
       - name: Run E2E tests
         run: npm run test:e2e
+{
+strategy:
+  matrix:
+    node-version: [14.x, 16.x, 18.x]  # Multiple versions for Node.js
+        }
