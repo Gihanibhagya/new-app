@@ -1,14 +1,10 @@
-# Incident Response Procedure
+# Playbook: Service Down
 
-## Step 1: Alert
-- GitHub Actions failure notification
-- Prometheus alert via email/Slack (if configured)
+## Symptoms:
+- App unreachable
+- Logs show 500 errors
 
-## Step 2: Diagnose
-- Check recent deploy logs
-- View `/metrics` endpoint
-- Trace using OpenTelemetry logs
-
-## Step 3: Fix & Postmortem
-- Rollback via GitHub CI/CD workflow
-- Document the issue in `docs/incidents/YYYY-MM-DD.md`
+## Actions:
+1. SSH into server
+2. Check logs via `docker logs`
+3. Restart service using `pm2 restart app`
